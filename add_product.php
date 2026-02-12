@@ -5,7 +5,6 @@ $success = "";
 
 // DEBUG (remove later)
 echo "<pre>";
-print_r($_POST);
 echo "</pre>";
 
 if (isset($_POST['save'])) {
@@ -31,11 +30,7 @@ if (isset($_POST['save'])) {
 <html>
 <head>
     <title>Add Product</title>
-    <style>
-        body { font-family: Arial; padding: 20px; }
-        input, button { padding: 8px; margin: 5px 0; width: 250px; }
-        button { cursor: pointer; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
