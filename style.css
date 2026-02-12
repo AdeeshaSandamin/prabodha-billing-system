@@ -1,0 +1,256 @@
+/* =====================================
+   RESET & GLOBAL
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 40px 80px;
+    color: #333;
+}
+
+/* =====================================
+   PAGE WRAPPER
+===================================== */
+
+.page-wrapper {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* =====================================
+   NAVBAR / HEADER
+===================================== */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 20px 28px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #1f2937;
+    letter-spacing: 0.3px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
+
+.button {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Primary */
+.button {
+    background-color: #007bff;
+    color: white;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Secondary */
+.button.secondary {
+    background-color: #6c757d;
+    margin-left: 12px;
+}
+
+.button.secondary:hover {
+    background-color: #545b62;
+}
+
+/* Submit button (forms) */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+/* =====================================
+   FORM CONTAINER
+===================================== */
+
+.container {
+    background: #ffffff;
+    padding: 35px;
+    max-width: 520px;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    margin-bottom: 22px;
+    font-weight: 600;
+}
+
+/* =====================================
+   INPUTS
+===================================== */
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+/* =====================================
+   TABLE WRAPPER
+===================================== */
+
+.table-container {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+    overflow-x: auto;
+}
+
+/* =====================================
+   TABLE STYLING
+===================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #1f2937;
+}
+
+th {
+    color: white;
+    padding: 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+td {
+    padding: 16px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background-color: #f8fafc;
+    transition: 0.15s ease;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+/* =====================================
+   NO DATA MESSAGE
+===================================== */
+
+.no-data {
+    text-align: center;
+    padding: 25px;
+    color: #999;
+    font-style: italic;
+}
+
+/* =====================================
+   SUCCESS MESSAGE
+===================================== */
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* =====================================
+   RESPONSIVE IMPROVEMENT
+===================================== */
+
+@media (max-width: 900px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .button.secondary {
+        margin-left: 10px;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
