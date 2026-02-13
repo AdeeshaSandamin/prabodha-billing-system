@@ -53,7 +53,7 @@ This project simulates a real-world retail billing environment where products ar
 ![Add Product](screenshots/addproductpage.png)
 
 ### 🧾 Billing Page
-![Billing Page](screenshots/billpage.png)
+![Billing Page](screenshots/billingpage.png)
 
 ---
 
